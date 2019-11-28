@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Initialise') {
       steps {
-        sh 'echo ${PATH}'
+        sh 'echo "hi"'
       }
     }
   }
