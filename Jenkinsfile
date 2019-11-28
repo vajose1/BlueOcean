@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Initialise') {
       steps {
         echo 'Jenkins Pipiline'
       }
