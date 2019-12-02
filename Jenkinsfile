@@ -11,7 +11,7 @@ pipeline {
         stage('Inititalise') {
           steps {
             sh '''echo "hi
-"'''
+"; echo "hello"'''
           }
         }
       }
