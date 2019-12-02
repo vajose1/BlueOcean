@@ -2,8 +2,18 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      steps {
-        echo 'Jenkins Pipiline'
+      parallel {
+        stage('Build') {
+          steps {
+            echo 'Jenkins Pipiline'
+          }
+        }
+        stage('Inititalise') {
+          steps {
+            sh '''echo "hi
+"'''
+          }
+        }
       }
     }
   }
